@@ -1,6 +1,8 @@
 [features]
+resolution = true
 seeds = false
 skip-lint = false
+
 [programs.localnet]
 multisig_demo = "H1wPJB59dvpLrMmdcJ6dxQSMmXsm6TSRxkNUtC4CFDs1"
 
@@ -10,3 +12,6 @@ url = "https://api.apr.dev"
 [provider]
 cluster = "localnet"
 wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
