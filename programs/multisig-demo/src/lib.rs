@@ -1,5 +1,6 @@
-// pub mod state;
-// mod error;
+pub mod state;
+mod error;
+
 // mod instructions;
 
 use anchor_lang::prelude::*;
